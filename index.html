@@ -7,9 +7,15 @@
 </head>
 <body>
     
-    <input id="searchText" type="text" placeholder="What would you like?..">
-    <button id="searchgifs" type="submit" onclick="getData()">Enter</button>
-    <div class="body"></div>
+    <button data-topics="Batman">Batman</button>
+    <button data-topics="Superman">Superman</button>
+    <button data-topics="Wonder Woman">Wonder Woman</button>
+    <button data-topics="Wolverine">Wolverine</button>
+    <button data-topics="Spider-Man">Spider-Man</button>
+    <button data-topics="Captain America">Captain America</button>
+
+    <div id="displayGifs">
+    </div>
 
     <!-- jQuery Reference. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
