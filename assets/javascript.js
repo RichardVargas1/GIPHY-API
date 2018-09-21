@@ -1,4 +1,4 @@
-// Event listener for all button elements
+// Event listener for any buttons shown on the page.
 $("button").on("click", function() {
     
 var topics = $(this).attr("data-topics");
@@ -8,32 +8,35 @@ $.ajax({
     url: queryURL,
     method: "GET"
 })
-    // After the data comes back from the API
+    // After the data comes back from the GIPHY API.
     .then(function(response) {
         console.log(queryURL);
-        // Storing an array of results in the results variable
+        // stored arrayed results.
         var results = response.data;
 
-        // Looping through each result item
         for (var i = 0; i < results.length; i++) {
 
-            // Creating and storing a div tag
+            // div tag.
             var heroDiv = $("<div>");
 
-            // Creating a paragraph tag with the result item's rating
+            // Paragraph tag wil be utilized to space out gifs.
             var p = $("<p>").text("Rating: " + results[i].rating);
 
-            // Creating and storing an image tag
+            // Creating and storing an image tag in this variable.
             var heroImage = $("<img>");
-            // Setting the src attribute of the image to a property pulled off the result item
+            // Setting the src attribute of the images to properties pulled from the URL.
             heroImage.attr("src", results[i].images.fixed_height.url);
 
-            // Appending the paragraph and image tag to the animalDiv
+            // heroDiv will be appended to the paragraph and image tabs.
             heroDiv.append(p);
             heroDiv.append(heroImage);
 
-            // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
-            $("#displayGifs").prepend(animalDiv);
+            // My heroDiv will be prepended to my HTML page.
+            // Shown in the displayGifs div.
+            $("#displayGifs").prepend(heroDiv);
           }
     });
 });
+
+// I utilized the dynamics-elements assignment to help contine this homework assignment.
+// It helped start off with the jQuery aspect.
