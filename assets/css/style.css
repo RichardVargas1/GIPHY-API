@@ -1,0 +1,39 @@
+body {
+    background-image: url("../images/full-bloom.png");
+}
+
+#footer {
+
+    width: 10%;
+    bottom: 0;
+    padding: 20px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    background: #666;
+    border-bottom: 8px solid #4e66d4;
+}
+
+superheros {
+    margin: 0 10px;
+}
+
+#superhero-form {
+    margin: 20px;
+}
+
+#addsuperhero {
+    margin: 10px;
+}
+
+h1 {
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+    background: #4e66d4;
+    font-weight: bold;
+    border-bottom: 8px solid #666;
+}

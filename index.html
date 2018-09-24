@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Page Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -12,22 +13,32 @@
     <div id="buttonsView"></div>
 
     <form id="superhero-form">
-        <h3 id="searchTitle">Add a Cartoon!</h3>
+        <!-- I was considering doing cartoons before I chose superheros. I forgot to edit this h3 tag earlier. -->
+        <h3 id="searchTitle">Add a Superhero!</h3>
         <label for="superhero-input"></label>
         <input type="text" id="superhero-input" placeholder="Search..."><br>
         
         <!-- Button triggers for a new superhero to be added onto the HTML. -->
-        <input type="button" class="btn btn-danger" id="addsuperhero" type="submit" value="Add superhero">
+        <input type="button" id="addsuperhero" type="submit" value="Add superhero">
     </form>
     
 
     <!-- Superhero gifs will be displayed here on the HTML. -->
     <div id="superherosView"></div>
 
+    <footer id="footer">
+        <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                    Copyright © R. Vargas
+                    </div>
+                </div>
+            </div>
+    </footer>
 
     <!-- jQuery Reference. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- My JavaScript Referece. -->
-    <script type "text/javascript" src="assets/javascript.js"></script>
+    <script type "text/javascript" src="assets/JS/javascript.js"></script>
 </body>
 </html>
