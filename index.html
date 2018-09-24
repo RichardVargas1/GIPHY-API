@@ -6,16 +6,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    
-    <button data-topics="Batman">Batman</button>
-    <button data-topics="Superman">Superman</button>
-    <button data-topics="Wonder Woman">Wonder Woman</button>
-    <button data-topics="Wolverine">Wolverine</button>
-    <button data-topics="Spider-Man">Spider-Man</button>
-    <button data-topics="Captain America">Captain America</button>
 
-    <div id="displayGifs">
-    </div>
+    <h1>Add a Superhero Button from the Textbox!</h1>
+
+    <div id="buttonsView"></div>
+
+    <form id="superhero-form">
+        <h3 id="searchTitle">Add a Cartoon!</h3>
+        <label for="superhero-input"></label>
+        <input type="text" id="superhero-input" placeholder="Search..."><br>
+        
+        <!-- Button triggers for a new superhero to be added onto the HTML. -->
+        <input type="button" class="btn btn-danger" id="addsuperhero" type="submit" value="Add superhero">
+    </form>
+    
+
+    <!-- Superhero gifs will be displayed here on the HTML. -->
+    <div id="superherosView"></div>
+
 
     <!-- jQuery Reference. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
