@@ -14,6 +14,12 @@ body {
     border-bottom: 8px solid #4e66d4;
 }
 
+.btn {
+    background-color: rgb(83, 83, 196);
+    margin: 10px;
+    color: white;
+}
+
 superheros {
     margin: 0 10px;
 }
@@ -36,4 +42,8 @@ h1 {
     background: #4e66d4;
     font-weight: bold;
     border-bottom: 8px solid #666;
+}
+
+#superherosView {
+    float: left;
 }
